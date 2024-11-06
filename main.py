@@ -61,7 +61,7 @@ class Particle:
 
         self.vel_vec = np.add(self.vel_vec, new_acl_vec)
 
-        # self.check_collision()
+        self.check_collision()
 
     def check_collision(self):
         # wall collision y vector switch bc pygame down is positive
@@ -137,13 +137,13 @@ class Attractor(Particle):
 
         self.vel_vec = np.add(self.vel_vec, new_acl_vec)
 
-        # self.check_collision()
+        self.check_collision()
 
 
 pygame.init()
-xmax = 1000
-ymax = 1000
-screen = pygame.display.set_mode((xmax,ymax))
+xmax = 1500
+ymax = 900
+screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 
 black = (0,0,0)
 
